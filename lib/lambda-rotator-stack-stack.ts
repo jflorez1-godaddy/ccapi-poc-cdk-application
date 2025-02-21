@@ -1,16 +1,19 @@
-import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
+import { LambdaRotator } from 'lambda-rotator-construct';
+import { GDStack, GDStackProps } from '@gd-safeguard/godaddy-constructs';
 // import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export class LambdaRotatorStackStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+export class LambdaRotatorStackTest extends GDStack {
+  constructor(scope: Construct, id: string, props: GDStackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'LambdaRotatorStackQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    new LambdaRotator(this, 'LambdaRotator', {
+      accountId: "456389336637",
+      privateDxSubnetsSSMParam: "/AdminParams/VPC/DxAppSubnets/All",
+      vpc: this.gdTrustedLandingZone.networking.vpc,
+      gdTrustedLandingZone: this.gdTrustedLandingZone,
+      redisClusterName: "test-clustered",
+      region: "us-west-2",
+    });
   }
 }

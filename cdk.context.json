@@ -1,0 +1,179 @@
+{
+  "ssm:account=237463477761:parameterName=/AdminParams/BaselineBucketNames/LOBAccessLogsBucket:region=us-west-2": "gd-access-scp-dev-private-logs-us-west-2-c-3emqxjib3",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/KMSKey:region=us-west-2": "arn:aws:kms:us-west-2:891948098344:alias/scp",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/KMSKeyArn:region=us-west-2": "arn:aws:kms:us-west-2:891948098344:key/713cb3a8-efb0-4a8a-be32-8b21a7c77a6b",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/Environment:region=us-west-2": "dev-private",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/Name:region=us-west-2": "scp",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/OrgType:region=us-west-2": "c3po",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/EnvMode:region=us-west-2": "prod",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/BudgetId:region=us-west-2": "001372-02",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/LegalOU:region=us-west-2": "USA",
+  "ssm:account=237463477761:parameterName=/AdminParams/Team/OrgOU:region=us-west-2": "Global",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/ID:region=us-west-2": "vpc-07ae61d65abec693a",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/PublicSubnets:region=us-west-2": "subnet-09336b531a5baced3,subnet-02820269d875a6901",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/PublicSubnetCIDRAZA:region=us-west-2": "192.168.0.0/22",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/PublicSubnetCIDRAZB:region=us-west-2": "192.168.4.0/22",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/PrivateAppSubnets/All:region=us-west-2": "subnet-0e1fafd78ee3110b9,subnet-05fba7483d1918c4a",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/DxAppSubnets/All:region=us-west-2": "subnet-00f281f6c731396f9,subnet-0351ef2c5b5e8f951",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/PrivateDbSubnets/All:region=us-west-2": "subnet-0114d2b6a5093f686,subnet-05891aa361961873b",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/DxDbSubnets/All:region=us-west-2": "subnet-0f75932fafe2a7607,subnet-00c47feca71014a3a",
+  "ssm:account=237463477761:parameterName=/GoldenAMI/gd-amzn2-ecs/latest:region=us-west-2": "ami-00d6823dfde21c6cb",
+  "ssm:account=237463477761:parameterName=/AdminParams/VPC/ScanTargetSG:region=us-west-2": "sg-0666f11d8c615b1a1",
+  "vpc-provider:account=237463477761:filter.isDefault=false:filter.vpc-id=vpc-07ae61d65abec693a:region=us-west-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-07ae61d65abec693a",
+    "vpcCidrBlock": "192.168.0.0/19",
+    "ownerAccountId": "237463477761",
+    "availabilityZones": [],
+    "vpnGatewayId": "vgw-0dbfe85d06b1c95f7",
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0e1fafd78ee3110b9",
+            "cidr": "192.168.16.0/21",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-03b0ad366b35cc490"
+          },
+          {
+            "subnetId": "subnet-00f281f6c731396f9",
+            "cidr": "100.85.254.0/24",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-0f676bf7045278249"
+          },
+          {
+            "subnetId": "subnet-0f75932fafe2a7607",
+            "cidr": "100.85.103.0/26",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-03290340c52ce9ef9"
+          },
+          {
+            "subnetId": "subnet-0114d2b6a5093f686",
+            "cidr": "192.168.8.0/22",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-08012e38a9e4587e8"
+          },
+          {
+            "subnetId": "subnet-00c47feca71014a3a",
+            "cidr": "100.85.103.64/26",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-0e8b8acab9917b17d"
+          },
+          {
+            "subnetId": "subnet-05891aa361961873b",
+            "cidr": "192.168.12.0/22",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-0a4e0254bfb81e185"
+          },
+          {
+            "subnetId": "subnet-05fba7483d1918c4a",
+            "cidr": "192.168.24.0/21",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-0449caeaf8945f1ae"
+          },
+          {
+            "subnetId": "subnet-0351ef2c5b5e8f951",
+            "cidr": "100.85.255.0/24",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-02526a079dfdbf37f"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-09336b531a5baced3",
+            "cidr": "192.168.0.0/22",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-030625fcbbcbf4d7b"
+          },
+          {
+            "subnetId": "subnet-02820269d875a6901",
+            "cidr": "192.168.4.0/22",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-030625fcbbcbf4d7b"
+          }
+        ]
+      }
+    ]
+  },
+  "ssm:account=456389336637:parameterName=/AdminParams/BaselineBucketNames/LOBAccessLogsBucket:region=us-west-2": "gd-access-contribute-dev-private-logs-us-west-2-d-df05hc97l",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/KMSKey:region=us-west-2": "arn:aws:kms:us-west-2:267700751808:alias/contribute",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/KMSKeyArn:region=us-west-2": "arn:aws:kms:us-west-2:267700751808:key/6edc0d09-7683-4b4c-b307-462802ee3e7f",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/Environment:region=us-west-2": "dev-private",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/Name:region=us-west-2": "contribute",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/OrgType:region=us-west-2": "non-pci",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/EnvMode:region=us-west-2": "dev",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/BudgetId:region=us-west-2": "000130-02",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/LegalOU:region=us-west-2": "USA",
+  "ssm:account=456389336637:parameterName=/AdminParams/Team/OrgOU:region=us-west-2": "CTO",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/ID:region=us-west-2": "vpc-0e53652672be25d34",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/PublicSubnets:region=us-west-2": "subnet-05f55834e0249908d,subnet-0cb1d509c2354de12",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/PublicSubnetCIDRAZA:region=us-west-2": "192.168.0.0/22",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/PublicSubnetCIDRAZB:region=us-west-2": "192.168.4.0/22",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/PrivateAppSubnets/All:region=us-west-2": "subnet-0c03ed2172b80a038,subnet-07a5c83975edbe64a",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/DxAppSubnets/All:region=us-west-2": "subnet-00000000000000000",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/PrivateDbSubnets/All:region=us-west-2": "subnet-0d025839cdac6828e,subnet-04e683e23ed9874f8",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/DxDbSubnets/All:region=us-west-2": "subnet-00000000000000000",
+  "ssm:account=456389336637:parameterName=/GoldenAMI/gd-amzn2-ecs/latest:region=us-west-2": "ami-0f31b1516a232bc98",
+  "ssm:account=456389336637:parameterName=/AdminParams/VPC/ScanTargetSG:region=us-west-2": "sg-0be62529c6bcedbc3",
+  "vpc-provider:account=456389336637:filter.isDefault=false:filter.vpc-id=vpc-0e53652672be25d34:region=us-west-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0e53652672be25d34",
+    "vpcCidrBlock": "192.168.0.0/19",
+    "ownerAccountId": "456389336637",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0d025839cdac6828e",
+            "cidr": "192.168.8.0/22",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-01729667e732450f3"
+          },
+          {
+            "subnetId": "subnet-0c03ed2172b80a038",
+            "cidr": "192.168.16.0/21",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-094ea7f0abeafaab7"
+          },
+          {
+            "subnetId": "subnet-07a5c83975edbe64a",
+            "cidr": "192.168.24.0/21",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-04583b3f676f48421"
+          },
+          {
+            "subnetId": "subnet-04e683e23ed9874f8",
+            "cidr": "192.168.12.0/22",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-02ef78993ff684b1f"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-05f55834e0249908d",
+            "cidr": "192.168.0.0/22",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-0330c48e3155b7c35"
+          },
+          {
+            "subnetId": "subnet-0cb1d509c2354de12",
+            "cidr": "192.168.4.0/22",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-0330c48e3155b7c35"
+          }
+        ]
+      }
+    ]
+  }
+}
